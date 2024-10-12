@@ -68,6 +68,10 @@ The `Contacts` table currently stores all contact-related information. To improv
 - `ContactSocialInformation`: Store social media information.
 - `ContactNotes`: Store additional notes and comments.
 
+### 7. Time Taken
+
+Total Time taken for this was approx 3 Hrs
+```
 ---
 
 Feel free to contribute or report any issues!
