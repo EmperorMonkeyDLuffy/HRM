@@ -32,19 +32,20 @@ USE [HRM];
 
 CREATE TABLE [dbo].[Contacts](
 	[ContactId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	  NOT NULL,
-	  NOT NULL,
-	  NOT NULL,
-	  NULL,
-	  NULL,
-	  NULL,
-	  NULL,
-	  NULL,
-	  NOT NULL,
-	  NULL,
+	[FirstName] [nvarchar](100) NOT NULL,
+	[LastName] [nvarchar](100) NOT NULL,
+	[Email] [nvarchar](256) NOT NULL,
+	[PhoneNumber] [varchar](10) NULL,
+	[TimeInterval] [nvarchar](100) NULL,
+	[Comments] [nvarchar](100) NULL,
+	[LinkedIn] [nvarchar](200) NULL,
+	[GitHub] [nvarchar](200) NULL,
+	[CreatedOn] [datetime2](7) NOT NULL,
+	[UpdatedOn] [datetime2](7) NULL,
 	[CreatedById] [int] NOT NULL,
 	[UpdatedById] [int] NULL
-);
+	)
+
 ```
 
 ### 4. Configure the Database Connection
